@@ -56,7 +56,7 @@
                                                                                  ▼  ส่งเฉพาะ 12 ตารางสรุป (~32,000 cells)
                                                                        ┌────────────────────┐        ┌──────────────────────────┐
                                                                        │ Google Sheets      │ ─────▶ │ Data Studio Dashboard     │
-                                                                       │ 1 ตาราง = 1 sheet   │ connector│ (Looker Studio)          │
+                                                                       │ 1 ตาราง = 1 sheet   │ connector│                          │
                                                                        └────────────────────┘        └──────────────────────────┘
 
                           run_pipeline.py  =  ingest → transform → publish  ด้วยคำสั่งเดียว
@@ -81,7 +81,7 @@
 | Transformation | pandas, NumPy | Cleaning, Feature Engineering, Joining, Aggregation |
 | Publish | gspread, gspread-dataframe, google-auth | เขียน DataFrame ลง Google Sheets |
 | Automation | `run_pipeline.py` | รันทุกขั้นด้วยคำสั่งเดียว |
-| Visualization | Data Studio (Looker Studio) | Dashboard เชื่อมกับ Google Sheets |
+| Visualization | Data Studio | Dashboard เชื่อมกับ Google Sheets |
 | Config | python-dotenv (`.env`) | แยกค่าตั้งค่าออกจากโค้ด |
 
 ### 3.1 Data Warehouse: `docker-compose.yml`
@@ -295,6 +295,6 @@ Normal **3.88%** → Overweight 7.30% → Obese I 14.43% → Obese II 19.42% →
 
 ## 9. ลิงก์ส่งงาน
 
-- **Data Studio Report:** [ใส่ลิงก์ Looker Studio — ตั้งแชร์เป็น "Anyone with the link can view"]
+- **Data Studio Report:** [ใส่ลิงก์ Data Studio — ตั้งแชร์เป็น "Anyone with the link can view"]
 - **GitHub Repository:** https://github.com/yanakornyodu-glitch/diabetes-pipeline
 - **วิธีรันโปรเจกต์:** ดู `README.md`

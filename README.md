@@ -1,7 +1,7 @@
 # Diabetes Risk Data Pipeline (Kaggle → PostgreSQL → Google Sheets → Data Studio)
 
 Automated data pipeline สำหรับชุดข้อมูลสุขภาพผู้ป่วย 100,000 คน (`diabetes_dataset_with_notes.csv` จาก Kaggle)
-ดึงข้อมูลลง PostgreSQL บน Docker → แปลงข้อมูลด้วย Pandas → ส่งตารางสรุปขึ้น Google Sheets → ทำ Dashboard บน Data Studio (Looker Studio)
+ดึงข้อมูลลง PostgreSQL บน Docker → แปลงข้อมูลด้วย Pandas → ส่งตารางสรุปขึ้น Google Sheets → ทำ Dashboard บน Data Studio
 
 ```
 Kaggle CSV ──ingest.py──▶ PostgreSQL raw_data ──transform.py──▶ PostgreSQL production ──publish.py──▶ Google Sheets ──▶ Data Studio
