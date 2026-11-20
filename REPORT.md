@@ -2,7 +2,7 @@
 
 > **กลุ่ม:** [ใส่ชื่อกลุ่ม] · **สมาชิก:** [ชื่อ-รหัส 1], [ชื่อ-รหัส 2], [ชื่อ-รหัส 3] · **วันนำเสนอ:** 21 พฤศจิกายน 2569
 >
-> **Data Studio Report:** [ใส่ลิงก์] · **GitHub:** [ใส่ลิงก์]
+> **Data Studio Report:** [ใส่ลิงก์] · **GitHub:** https://github.com/yanakornyodu-glitch/diabetes-pipeline
 
 ---
 
@@ -296,5 +296,5 @@ Normal **3.88%** → Overweight 7.30% → Obese I 14.43% → Obese II 19.42% →
 ## 9. ลิงก์ส่งงาน
 
 - **Data Studio Report:** [ใส่ลิงก์ Looker Studio — ตั้งแชร์เป็น "Anyone with the link can view"]
-- **GitHub Repository:** [ใส่ลิงก์ — ตรวจแล้วว่าไม่มี `credentials.json` / `.env` ใน repo]
+- **GitHub Repository:** https://github.com/yanakornyodu-glitch/diabetes-pipeline
 - **วิธีรันโปรเจกต์:** ดู `README.md`

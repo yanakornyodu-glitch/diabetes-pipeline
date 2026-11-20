@@ -26,7 +26,7 @@ Kaggle CSV ──ingest.py──▶ PostgreSQL raw_data ──transform.py──
 
 ```powershell
 # Windows PowerShell
-git clone <repo-url>
+git clone https://github.com/yanakornyodu-glitch/diabetes-pipeline.git
 cd diabetes-pipeline
 python -m pip install -r requirements.txt
 copy .env.example .env
@@ -34,7 +34,7 @@ copy .env.example .env
 
 ```bash
 # macOS / Linux
-git clone <repo-url> && cd diabetes-pipeline
+git clone https://github.com/yanakornyodu-glitch/diabetes-pipeline.git && cd diabetes-pipeline
 python3 -m pip install -r requirements.txt
 cp .env.example .env
 ```
