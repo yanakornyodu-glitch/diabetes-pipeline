@@ -83,17 +83,19 @@ docker exec -it diabetes-postgres psql -U pipeline -d diabetes -c "\dt productio
 | ตาราง | แถว | ใช้ตอบ | ส่งขึ้น Sheets |
 |---|---|---|---|
 | `patients_clean` | 99,986 | ตารางหลักระดับผู้ป่วย | ไม่ส่ง (ใหญ่และมีข้อความยาว) |
-| `kpi_summary` | 1 | Scorecards | ส่ง |
+| `kpi_summary` | 1 | KPI รวม (สำรอง) | ส่ง |
 | `diabetes_by_age_group` | 7 | Q1 | ส่ง |
 | `diabetes_by_bmi_category` | 6 | Q2 | ส่ง |
 | `diabetes_by_comorbidity` | 8 | Q3 | ส่ง |
-| `diabetes_by_hba1c_band`, `diabetes_by_glucose_band`, `diabetes_by_lab_matrix` | 3 / 4 / 12 | Q4 | ส่ง |
-| `lab_scatter_sample` | 5,000 | Q4 scatter (สุ่มกลุ่มละ 2,500) | ส่ง |
+| `diabetes_by_lab_matrix` | 12 | Q4 (heatmap) | ส่ง |
+| `diabetes_by_hba1c_band`, `diabetes_by_glucose_band` | 3 / 4 | สำรอง | ส่ง |
+| `lab_scatter_sample` | 5,000 | สำรอง (สุ่มกลุ่มละ 2,500 สำหรับ scatter) | ส่ง |
 | `diabetes_by_smoking` | 6 | Q5 | ส่ง |
-| `diabetes_by_state` | 54 | Q6 | ส่ง |
-| `diabetes_by_demographic` | 83 | Q7 | ส่ง |
-| `diabetes_by_risk_markers` | 7 | กลุ่มเป้าหมายคัดกรอง | ส่ง |
+| `diabetes_by_state` | 54 | สำรอง (รายรัฐ) | ส่ง |
+| `diabetes_by_demographic` | 83 | สำรอง (อายุ × เพศ × เชื้อชาติ) | ส่ง |
+| `diabetes_by_risk_markers` | 7 | สำรอง (กลุ่มเป้าหมายคัดกรอง) | ส่ง |
 
+Dashboard ใช้ 5 ตารางที่ตอบ Q1–Q5 ส่วนตาราง "สำรอง" ส่งขึ้นไปด้วยเพื่อตรวจสอบและต่อยอด
 ส่งขึ้น Sheets รวมประมาณ 32,000 cells (ลิมิตของ Google Sheets คือ 10 ล้าน cells)
 
 ## Troubleshooting
