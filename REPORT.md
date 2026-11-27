@@ -2,14 +2,14 @@
 
 > **สมาชิก:** [1670904349 ภูรี สิมมา], [1670904174 ญาณากร ยอดอุดม], [1670901552 เอกรัตน์ จิตรบรรจง] · **วันนำเสนอ:** 21 พฤศจิกายน 2569
 >
-> **Data Studio Report:** [ใส่ลิงก์] · **GitHub:** https://github.com/yanakornyodu-glitch/diabetes-pipeline
+> **Data Studio Report:** https://datastudio.google.com/reporting/1decfc00-799b-4fe8-a7a3-3ba57329247c/page/3H2DG · **GitHub:** https://github.com/yanakornyodu-glitch/diabetes-pipeline
 
 ---
 
 ## 1. ที่มาและความสนใจ
 
 โรคเบาหวานเป็นโรคเรื้อรังที่พบบ่อย และมักไม่มีอาการชัดเจนในช่วงแรก ถ้ารู้ว่าคนกลุ่มไหนมีความเสี่ยงสูง ก็จะคัดกรองได้ตรงกลุ่มและเริ่มป้องกันได้เร็วขึ้น
-กลุ่มจึงเลือกชุดข้อมูลสุขภาพผู้ป่วยจาก Kaggle ชื่อไฟล์ **`diabetes_dataset_with_notes.csv`** ([ใส่ลิงก์หน้า dataset บน Kaggle]) เพื่อหาว่าปัจจัยใดสัมพันธ์กับการเป็นเบาหวานมากที่สุด
+กลุ่มจึงเลือกชุดข้อมูลสุขภาพผู้ป่วยจาก Kaggle ชื่อไฟล์ **`diabetes_dataset_with_notes.csv`** ([Diabetes Clinical Dataset (100k rows)](https://www.kaggle.com/datasets/ziya07/diabetes-clinical-dataset100k-rows)) เพื่อหาว่าปัจจัยใดสัมพันธ์กับการเป็นเบาหวานมากที่สุด
 
 เหตุผลที่เลือกชุดข้อมูลนี้
 
@@ -298,6 +298,6 @@ Dashboard บน Data Studio ตอบคำถามทั้ง 5 ข้อด
 
 ## 9. ลิงก์ส่งงาน
 
-- **Data Studio Report:** [ใส่ลิงก์ Data Studio — ตั้งแชร์เป็น "Anyone with the link can view"]
+- **Data Studio Report:** https://datastudio.google.com/reporting/1decfc00-799b-4fe8-a7a3-3ba57329247c/page/3H2DG
 - **GitHub Repository:** https://github.com/yanakornyodu-glitch/diabetes-pipeline
 - **วิธีรันโปรเจกต์:** ดู `README.md`

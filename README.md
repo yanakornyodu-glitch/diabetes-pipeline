@@ -3,6 +3,8 @@
 Automated data pipeline สำหรับชุดข้อมูลสุขภาพผู้ป่วย 100,000 คน (`diabetes_dataset_with_notes.csv` จาก Kaggle)
 ดึงข้อมูลลง PostgreSQL บน Docker → แปลงข้อมูลด้วย Pandas → ส่งตารางสรุปขึ้น Google Sheets → ทำ Dashboard บน Data Studio
 
+**Dashboard (Data Studio):** https://datastudio.google.com/reporting/1decfc00-799b-4fe8-a7a3-3ba57329247c/page/3H2DG
+
 ```
 Kaggle CSV ──ingest.py──▶ PostgreSQL raw_data ──transform.py──▶ PostgreSQL production ──publish.py──▶ Google Sheets ──▶ Data Studio
                                       (Docker)                                  run_pipeline.py = ทั้งหมดในคำสั่งเดียว
@@ -40,7 +42,7 @@ cp .env.example .env
 ```
 
 ### 2. ดาวน์โหลดข้อมูลจาก Kaggle
-ดาวน์โหลด `diabetes_dataset_with_notes.csv` จากหน้า dataset บน Kaggle แล้ววางไว้ที่ `data/diabetes_dataset_with_notes.csv`
+ดาวน์โหลด `diabetes_dataset_with_notes.csv` จาก [Kaggle: Diabetes Clinical Dataset (100k rows)](https://www.kaggle.com/datasets/ziya07/diabetes-clinical-dataset100k-rows) แล้ววางไว้ที่ `data/diabetes_dataset_with_notes.csv`
 (ไฟล์ CSV ไม่ถูก commit ขึ้น Git)
 
 ### 3. เปิด PostgreSQL
